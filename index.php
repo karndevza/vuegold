@@ -1,4 +1,4 @@
 <?php 
-echo 'hi kphp'
+header("location: index.html");
 
 ?>
