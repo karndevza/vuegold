@@ -75,7 +75,7 @@
                             </div>
                             <div class="card card-main-bg"  >
                                     <div class="card-body">  
-                                    <p class=" gold-font head-card-gold text-center"  >ราคาทองตามประกาศของสมาคมค้าทองคำ </p>
+                                    <p class=" gold-font head-card-gold text-center"  >ประกาศของสมาคมค้าทองคำ </p>
                                     <p class=" gold-font text-center">วันที่ <?=$manage[1][0]['time'];?>  ครั้งที่ <?=$manage[1][0]['upd'];?>  </p>
 
                                         <table class="table text-center">
