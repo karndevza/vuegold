@@ -4,7 +4,7 @@
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    รายงานทองคำวันนี้ Vuejs
+    รายงานทองคำวันนี้
   </title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -39,6 +39,10 @@
           background-color: #4e2a82 !important; 
           color: white;
         }
+        .font-SZ{font-size: 150%;font-weight: 500;}
+  .color_red{ color:red;font-size: 150%;font-weight: 900;}
+  .color_green{ color:green;font-size: 150%;font-weight: 900;}
 
   </style>
+
 </head>

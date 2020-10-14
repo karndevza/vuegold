@@ -15,14 +15,14 @@
               <ul class="navbar-nav ml-auto">
                 <li class="dropdown nav-item">
                   <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                    <i class="material-icons">apps</i> Components
+                    <i class="material-icons">apps</i>Home
                   </a>
                   <div class="dropdown-menu dropdown-with-icons">
-                    <a href="index.html" class="dropdown-item">
-                      <i class="material-icons">layers</i> All Components
+                    <a href="index.php" class="dropdown-item">
+                      <i class="material-icons">layers</i> Main
                     </a>
-                    <a href="https://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html" class="dropdown-item">
-                      <i class="material-icons">content_paste</i> Documentation
+                    <a href="#" class="dropdown-item">
+                      <i class="material-icons">content_paste</i> คำนวน
                     </a>
                   </div>
                 </li>

@@ -5,13 +5,62 @@
     error_reporting(E_ALL ^ E_NOTICE);
     ini_set('max_execution_time', 0);
     ini_set("memory_limit", "1024M");  
-    header('Content-Type: text/html; charset=UTF-8');  
+    header('Content-Type: text/html; charset=UTF-8'); 
+    include_once("theme/head.php");  
     $urls = 'https://zpay2.000webhostapp.com/api/gold.json';
     $homepage = file_get_contents($urls);  
     $data = $homepage;
     $manage = json_decode($data, true);
+            
+        $num = 0; $nums=0;
+        $price = array();
+
+        if($manage[0]['status']=='fail'){
+            $data ='fail';
+
+        }else{
+            $data ='true';
+
+        for ($i = 0 ; $i < count($manage[1]); $i++) {    
+            $num = $manage[1][$i]['price'];
+            $nums = $nums +  $manage[1][$i]['price'];
+        }
+        if($nums<0){
+                $strnum = '<i class="fa fa-sort-down" style="font-size:28px;color:red"><font color="red"> '.$nums.'</font>';
+                
+            } else{
+            $strnum = '<i class="fa fa-sort-up" style="font-size:28px;color:green"><font color="green"> '.$nums.'</font>';
+            
+            }  
+
+            if($manage[1][0]['price']<0){
+            $pupd = '<i class="fa fa-sort-down" style="font-size:28px;color:red"></i><font color="red">'.$manage[1][0]['price'].'</font>';
+            $cls_color = "color_red";
+            }else{
+            $pupd = '<i class="fa fa-sort-up" style="font-size:28px;color:green"></i><font color="green">'.$manage[1][0]['price'].'</font>';
+            $cls_color = "color_green";
+            }
+        }  
+        
+
+                    function chk_color($num){
+                    if($num<0){
+                        $strx = "color_red";
+                    }else{
+                        $strx = "color_green";
+                    }
+                    return  $strx;
+                    }
+
+                    function chk_table_color($num){
+                    if($num<0){
+                        $strx = ' class="bg-warning font-size: 150%;font-weight: 500" ';
+                    }else{
+                        $strx = ' class="bg-success font-size: 150%;font-weight: 500" ';
+                    }
+                    return  $strx;
+                    }
     
-    include_once("theme/head.php"); 
     ?>
 
 
@@ -43,17 +92,19 @@
                                             <tbody>
                                             <tr>
                                                 <td>ทองคำแท่ง</td>
-                                                <td><?=$manage[1][0]['blbuy'];?></td>
-                                                <td><?=$manage[1][0]['blbuy'];?></td>
+                                                
+                                                <td class="text-center <?=$cls_color;?>"><?=$manage[1][0]['blbuy'];?></td>
+                                                <td class="text-center <?=$cls_color;?>"><?=$manage[1][0]['blbuy'];?></td>
                                             </tr>
                                             <tr>
                                                 <td>ทองรูปพรรณ</td>
-                                                <td><?=$manage[1][0]['ombuy'];?></td>
-                                                <td><?=$manage[1][0]['omsell'];?></td>
+                                                <td class="text-center <?=$cls_color;?>"><?=$manage[1][0]['ombuy'];?></td>
+                                                <td class="text-center <?=$cls_color;?>"><?=$manage[1][0]['omsell'];?></td>
                                             </tr>
-                                            <tr>
-                                                <td>วันนี้ </td>
-                                                <td colspan="2" ><?=$manage[1][0]['price'];?> </td>                                   
+                                            <tr>                                            
+                                                <td >วันนี้ <?= $strnum;?></td>
+                                                <td class="text-center <?=$cls_color;?>"><?=$pupd;?></td>    
+                                                <td class="text-center <?=$cls_color;?>"><?=$pupd;?></td>                                  
                                             </tr>
                                             </tbody>
                                             
