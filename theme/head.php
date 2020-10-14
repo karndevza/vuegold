@@ -31,6 +31,13 @@
         .gold-font{
           color: #D4AF37;
         }
+        .head-card-gold{
+          font-size: 110%;font-weight: 300;
+        
+        }
+        .card-main-bg{
+          background: #fffdf4;
+        }
         .card-gold-bg{
           background: #D4AF37 !important; 
           color: white;

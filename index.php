@@ -73,20 +73,18 @@
                                 </div>
                                 </div>
                             </div>
-                            <div class="card " id="app" >
-                            <div v-for="(result,i) in results">                     
-                                <div  v-if="i > 0 "  v-for="value in result" >
-                                    <div class="card-header card-gold-bg text-center">  <h5 class=" title gold-font"  >ราคาทองตามประกาศของสมาคมค้าทองคำ </h5></div>
+                            <div class="card card-main-bg"  >
                                     <div class="card-body">  
-                                    <p  class=" text-center">วันที่ <?=$manage[1][0]['time'];?>  ครั้งที่ <?=$manage[1][0]['upd'];?>  </p>
+                                    <p class=" gold-font head-card-gold text-center"  >ราคาทองตามประกาศของสมาคมค้าทองคำ </p>
+                                    <p class=" gold-font text-center">วันที่ <?=$manage[1][0]['time'];?>  ครั้งที่ <?=$manage[1][0]['upd'];?>  </p>
 
                                         <table class="table text-center">
                                             <thead  class="thead-info">
 
                                             <tr>
-                                                <th scope="col"># 96.5%</th>
-                                                <th scope="col"># ซื้อ</th>
-                                                <th scope="col"># ขาย</th>
+                                                <th class="gold-font" scope="col"># 96.5%</th>
+                                                <th class="gold-font" scope="col"> ซื้อ</th>
+                                                <th class="gold-font"  scope="col"> ขาย</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -111,8 +109,8 @@
                                             </table>
                                     </div>
                                     <div class="card-footer text-center">Goldspot <?=$manage[1][0]['gspot'];?> | USD <?=$manage[1][0]['usd'];?></div>
-                                </div>
-                            </div>
+                             
+                          
                             </div>
                         </div> <!-- end - main main-raised -->
         <?php 
