@@ -16,7 +16,7 @@
   <link href="assets/demo/demo.css" rel="stylesheet" />
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
   <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
 
   <style>
@@ -46,6 +46,13 @@
           background-color: #4e2a82 !important; 
           color: white;
         }
+        .card-b-pad{
+          padding: .09rem 0.09rem;
+        }
+        .card-h-color{
+          background: linear-gradient(60deg, rgba(212,175,55,1) 0%, rgba(212,175,55,1) 35%);
+        }
+        
         .font-SZ{font-size: 150%;font-weight: 500;}
   .color_red{ color:red;font-size: 150%;font-weight: 900;}
   .color_green{ color:green;font-size: 150%;font-weight: 900;}

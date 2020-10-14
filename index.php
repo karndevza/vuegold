@@ -4,7 +4,6 @@
     <?php 
     error_reporting(E_ALL ^ E_NOTICE);
     ini_set('max_execution_time', 0);
-    ini_set("memory_limit", "1024M");  
     header('Content-Type: text/html; charset=UTF-8'); 
     include_once("theme/head.php");  
     $urls = 'https://zpay2.000webhostapp.com/api/gold.json';
@@ -69,14 +68,20 @@
                         <div class="main main-raised" style="margin: 0px 3px 0px;">  <!-- start - main main-raised -->
                             <div class="container">
                                 <div class=" text-center ">                 
-                                <div class="row">
-                                </div>
+                                        <div class="row">
+                                        </div>
                                 </div>
                             </div>
-                            <div class="card card-main-bg"  >
-                                    <div class="card-body">  
-                                    <p class=" gold-font head-card-gold text-center"  >ประกาศของสมาคมค้าทองคำ </p>
-                                    <p class=" gold-font text-center">วันที่ <?=$manage[1][0]['time'];?>  ครั้งที่ <?=$manage[1][0]['upd'];?>  </p>
+                            <div class="card card-main-bg"  style="margin-top: 20px;">
+                                    <div class="card-h-color card-header card-header-text" style="
+                                        background: linear-gradient(60deg, rgba(212,175,55,1) 0%, rgba(212,175,55,1) 35%); padding: 0.005rem;">
+                                        <div class="card-text">
+                                                <h2 class="card-title head-card-gold font-SZ text-center">ประกาศของสมาคมค้าทองคำ</h2>
+                                                <p class="text-center font-SZ">วันที่ <?=$manage[1][0]['time'];?>  ครั้งที่ <?=$manage[1][0]['upd'];?></p>
+                                        </div>
+                                    </div>      
+                                    <div class="card-body card-b-pad" style="padding: .5rem 0.15rem;" >                                      
+                                    <!-- <p class=" gold-font text-center">วันที่ <?=$manage[1][0]['time'];?>  ครั้งที่ <?=$manage[1][0]['upd'];?>  </p> -->
 
                                         <table class="table text-center">
                                             <thead  class="thead-info">
@@ -89,37 +94,105 @@
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                <td>ทองคำแท่ง</td>
+                                                <td class="gold-font" >ทองคำแท่ง</td>
                                                 
-                                                <td class="text-center <?=$cls_color;?>"><?=$manage[1][0]['blbuy'];?></td>
-                                                <td class="text-center <?=$cls_color;?>"><?=$manage[1][0]['blbuy'];?></td>
+                                                <td class=" text-center <?=$cls_color;?>"><?=$manage[1][0]['blbuy'];?></td>
+                                                <td class=" text-center <?=$cls_color;?>"><?=$manage[1][0]['blbuy'];?></td>
                                             </tr>
                                             <tr>
-                                                <td>ทองรูปพรรณ</td>
-                                                <td class="text-center <?=$cls_color;?>"><?=$manage[1][0]['ombuy'];?></td>
-                                                <td class="text-center <?=$cls_color;?>"><?=$manage[1][0]['omsell'];?></td>
+                                                <td class="gold-font" >ทองรูปพรรณ</td>
+                                                <td class=" text-center <?=$cls_color;?>"><?=$manage[1][0]['ombuy'];?></td>
+                                                <td class=" text-center <?=$cls_color;?>"><?=$manage[1][0]['omsell'];?></td>
                                             </tr>
                                             <tr>                                            
-                                                <td >วันนี้ <?= $strnum;?></td>
-                                                <td class="text-center <?=$cls_color;?>"><?=$pupd;?></td>    
+                                                <td class="gold-font"  >วันนี้ <?= $strnum;?></td>
+                                                <td class=" text-center <?=$cls_color;?>"><?=$pupd;?></td>    
                                                 <td class="text-center <?=$cls_color;?>"><?=$pupd;?></td>                                  
                                             </tr>
                                             </tbody>
                                             
                                             </table>
                                     </div>
-                                    <div class="card-footer text-center">Goldspot <?=$manage[1][0]['gspot'];?> | USD <?=$manage[1][0]['usd'];?></div>
+                                    <div class="gold-font card-footer text-center">Goldspot <?=$manage[1][0]['gspot'];?> | USD <?=$manage[1][0]['usd'];?></div>
                              
                           
                             </div>
+
+
+                            
+                        </div> <!-- end - main main-raised -->
+
+                        <div class="main main-raised" style="margin: 0px 3px 0px;">  <!-- start - main main-raised -->
+                            <div class="container">
+                                <div class=" text-center ">                 
+                                        <div class="row">
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="card card-main-bg"  style="margin-top: 20px;">
+                                    <div class="card-h-color card-header card-header-text" style="
+                                        background: linear-gradient(60deg, rgba(212,175,55,1) 0%, rgba(212,175,55,1) 35%); padding: 0.005rem;">
+                                        <div class="card-text">
+                                                <h2 class="card-title head-card-gold font-SZ text-center">คำนวณราคาทองคำ</h2>
+                                                
+                                        </div>
+                                    </div>      
+                                    <div class="card-body card-b-pad" style="padding: .5rem 0.15rem;" >                                      
+                                            <table class="table">
+                                            <?php 
+                                            function toNumber($val) {
+                                                $val =   str_replace(',','',$val);
+                                                if (is_numeric($val)) {
+                                                    $int = (int)$val;
+                                                    $float = (float)$val;
+                                            
+                                                    $val = ($int == $float) ? $int : $float;
+                                                    return $val;
+                                                } else {
+                                                    trigger_error("Cannot cast $val to a number", E_USER_WARNING);
+                                                    return null;
+                                                }
+                                            }
+                                            $golds = toNumber($manage[1][0]['ombuy']);
+                                            
+                                            ?>
+                                                    <thead>
+                                                        <tr>                             
+                                                            <th class="font-SZ"  >ทองคำรูปพรรณ</th>
+                                                            <th class="text-center font-SZ">ราคา/บาท</th>                                                             
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="gold-font">
+                                                    <tr>
+                                                        <td class="font-SZ" >1 บาท</td>  
+                                                        <td class="text-center font-SZ"><?=number_format($golds,2);?></td> 
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="font-SZ">2 สลึง</td>  
+                                                        <td class="text-center font-SZ"><?=number_format(($golds/2),2);?></td> 
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="font-SZ">1 สลึง</td>  
+                                                        <td class="text-center font-SZ"><?=number_format((($golds)/4),2);?></td> 
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="font-SZ">ครึ่งสลึง</td>  
+                                                        <td class="text-center font-SZ"><?=number_format(((($golds/4))/2),2);?></td> 
+                                                    </tr>
+
+                                                    </tbody>
+                                            </table>
+                                    </div>
+                                   
+                          
+                            </div>
+
+
+                            
                         </div> <!-- end - main main-raised -->
         <?php 
             include_once("theme/footer.php");
             include_once("theme/scirpt.php");
         ?>
-
-
- 
 </body>
-
 </html>
