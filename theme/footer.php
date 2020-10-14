@@ -8,7 +8,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="fb.com/smsgoldthai">
+                  <a href="https://fb.com/smsgoldthai">
                    fb page
                   </a>
                 </li>

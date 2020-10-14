@@ -73,8 +73,8 @@
                                 </div>
                             </div>
                             <div class="card card-main-bg"  style="margin-top: 20px;">
-                                    <div class="card-h-color card-header card-header-text" style="
-                                        background: linear-gradient(60deg, rgba(212,175,55,1) 0%, rgba(212,175,55,1) 35%); padding: 0.005rem;">
+                                    <div class="card-h-color card-header card-header-text"  style="
+                                        background: linear-gradient(60deg, rgba(212,175,55,1) 0%, rgba(212,175,55,1) 35%); padding: 0.005rem;" >
                                         <div class="card-text">
                                                 <h2 class="card-title head-card-gold font-SZ text-center">ประกาศของสมาคมค้าทองคำ</h2>
                                                 <p class="text-center font-SZ">วันที่ <?=$manage[1][0]['time'];?>  ครั้งที่ <?=$manage[1][0]['upd'];?></p>
