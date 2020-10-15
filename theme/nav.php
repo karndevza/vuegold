@@ -15,14 +15,14 @@
               <ul class="navbar-nav ml-auto">
                 <li class="dropdown nav-item">
                   <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                    <i class="material-icons">apps</i>Home
+                    <i class="material-icons">menu</i>
                   </a>
                   <div class="dropdown-menu dropdown-with-icons">
                     <a href="index.php" class="dropdown-item">
-                      <i class="material-icons">layers</i> Main
+                      <i class="material-icons">home</i> Home
                     </a>
-                    <a href="#" class="dropdown-item">
-                      <i class="material-icons">content_paste</i> คำนวน
+                    <a href="pricelist.php" class="dropdown-item">
+                      <i class="material-icons">update</i> PriceList
                     </a>
                   </div>
                 </li>
