@@ -22,7 +22,10 @@
                           <i class="material-icons">home</i> Home
                         </a>
                         <a href="pricelist.php" class="dropdown-item">
-                          <i class="material-icons">update</i> PriceList
+                          <i class="material-icons">list_alt</i> PriceList
+                        </a>
+                        <a href="pricelist.php" class="dropdown-item">
+                          <i class="material-icons">update</i> Setting
                         </a>
                       </div>
                 </li>
@@ -41,6 +44,7 @@
                     <i class="fa fa-youtube"></i>
                   </a>
                 </li>
+                
               </ul>
               
             </div>
