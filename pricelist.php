@@ -44,18 +44,18 @@
 
                     function chk_color($num){
                     if($num<0){
-                        $strx = "color_red";
+                        $strx = "color_red_pl";
                     }else{
-                        $strx = "color_green";
+                        $strx = "color_green_pl";
                     }
                     return  $strx;
                     }
 
                     function chk_table_color($num){
                     if($num<0){
-                        $strx = ' class="bg-warning font-size: 150%;font-weight: 500" ';
+                        $strx = ' class="bg-warning font-size: 120%;font-weight: 300" ';
                     }else{
-                        $strx = ' class="bg-success font-size: 150%;font-weight: 500" ';
+                        $strx = ' class="bg-success font-size: 120%;font-weight: 300" ';
                     }
                     return  $strx;
                     }
@@ -85,11 +85,11 @@
                                     <table class="table">
                             <thead>
                                 <tr>                             
-                                    <th  class="text-center">เวลา</th>
-                                    <th class="text-center">ครั้งที่</th>
-                                    <th class="text-center">Gold Spot</th>
-                                    <th class="text-center">USD/บาท</th>
-                                    <th class="text-center">ขึ้นลง</th>                                
+                                    <th  class="text-center gold-font">เวลา</th>
+                                    <th class="text-center gold-font">ครั้งที่</th>
+                                    <th class="text-center gold-font">Gold Spot</th>
+                                    <th class="text-center gold-font">USD/บาท</th>
+                                    <th class="text-center gold-font">ขึ้นลง</th>                                
                                 </tr>
                             </thead>
                             <tbody>

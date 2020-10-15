@@ -158,25 +158,25 @@
                                             ?>
                                                     <thead>
                                                         <tr>                             
-                                                            <th class="font-SZ"  >ทองคำรูปพรรณ</th>
+                                                            <th class="text-center font-SZ"  >ทองคำรูปพรรณ</th>
                                                             <th class="text-center font-SZ">ราคา/บาท</th>                                                             
                                                         </tr>
                                                     </thead>
                                                     <tbody class="gold-font">
                                                     <tr>
-                                                        <td class="font-SZ" >1 บาท</td>  
+                                                        <td class="text-center font-SZ" >1 บาท</td>  
                                                         <td class="text-center font-SZ"><?=number_format($golds,2);?></td> 
                                                     </tr>
                                                     <tr>
-                                                        <td class="font-SZ">2 สลึง</td>  
+                                                        <td class="text-center font-SZ">2 สลึง</td>  
                                                         <td class="text-center font-SZ"><?=number_format(($golds/2),2);?></td> 
                                                     </tr>
                                                     <tr>
-                                                        <td class="font-SZ">1 สลึง</td>  
+                                                        <td class="text-center font-SZ">1 สลึง</td>  
                                                         <td class="text-center font-SZ"><?=number_format((($golds)/4),2);?></td> 
                                                     </tr>
                                                     <tr>
-                                                        <td class="font-SZ">ครึ่งสลึง</td>  
+                                                        <td class="text-center font-SZ">ครึ่งสลึง</td>  
                                                         <td class="text-center font-SZ"><?=number_format(((($golds/4))/2),2);?></td> 
                                                     </tr>
 
