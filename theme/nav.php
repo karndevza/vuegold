@@ -20,20 +20,26 @@
                       <div class="dropdown-menu dropdown-with-icons">
                         <a href="index.php" class="dropdown-item">
                           <i class="material-icons">home</i> Home
-                        </a>
-                        <a href="pricelist.php" class="dropdown-item">
-                          <i class="material-icons">list_alt</i> PriceList
-                        </a>
+                        </a>                    
+                      
                         <a href="pricelist.php" class="dropdown-item">
                           <i class="material-icons">update</i> Setting
                         </a>
+                        <a class="dropdown-item" href="#" target="_blank">
+                           <i class="material-icons">unarchive</i> Upgrade
+                       </a>
                       </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" target="_blank">
-                    <i class="material-icons">unarchive</i> Upgrade
-                  </a>
-                </li>               
+                       <a href="pricelist.php" class="nav-link">
+                          <i class="material-icons">list_alt</i> สรุปราคาทองคำ
+                        </a>               
+                </li>  
+                <li class="nav-item">
+                       <a href="cal.php" class="nav-link">
+                          <i class="material-icons">list_alt</i> คำนวนราคา
+                        </a>               
+                </li>              
                 <li class="nav-item">
                   <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/smsgoldthai" target="_blank" data-original-title="Like Facebook" rel="nofollow">
                     <i class="fa fa-facebook-square"></i>
@@ -43,8 +49,7 @@
                   <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.youtube.com/channel/UCHk5Ru2OHFhOeXvbQiciAFQ" target="_blank" data-original-title="ติดตาม Youtube" rel="nofollow">
                     <i class="fa fa-youtube"></i>
                   </a>
-                </li>
-                
+                </li> 
               </ul>
               
             </div>

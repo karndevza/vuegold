@@ -18,8 +18,19 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script> -->
 
   <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+  <script data-ad-client="ca-pub-5492480815317469" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
 
   <style>
+    .footer-fix {    
+  position: fixed;
+   left: 0;
+  bottom: 0;
+  width: 100%; 
+ 
+  color: black;
+  text-align: center;
+}
 
         .collapse-row.collapsed + tr {
           display: none;

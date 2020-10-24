@@ -10,6 +10,7 @@
     $homepage = file_get_contents($urls);  
     $data = $homepage;
     $manage = json_decode($data, true);
+    $_SESSION['page'] = "pricelist";
             
         $num = 0; $nums=0;
         $price = array();

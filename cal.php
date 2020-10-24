@@ -10,8 +10,7 @@
     $homepage = file_get_contents($urls);  
     $data = $homepage;
     $manage = json_decode($data, true);
-     $_SESSION['page'] = "index";
-   
+    $_SESSION['page'] = "cal";
             
         $num = 0; $nums=0;
         $price = array();
@@ -65,7 +64,7 @@
     ?>
 
 
-                <body class="landing-page sidebar-collapse"> 
+                <body class="landing-page sidebar-collapse"  > 
                     <?php include_once("theme/nav.php");?>
                         <div class="main main-raised" style="margin: 0px 3px 0px;">  <!-- start - main main-raised -->
                             <div class="container">
@@ -82,45 +81,22 @@
                                                 <p class="text-center font-SZ">วันที่ <?=$manage[1][0]['time'];?>  ครั้งที่ <?=$manage[1][0]['upd'];?></p>
                                         </div>
                                     </div>      
-                                    <div class="card-body card-b-pad" style="padding: .5rem 0.15rem;" >                                      
-                                    <!-- <p class=" gold-font text-center">วันที่ <?=$manage[1][0]['time'];?>  ครั้งที่ <?=$manage[1][0]['upd'];?>  </p> -->
-
-                                        <table class="table text-center">
-                                            <thead  class="thead-info">
-
-                                            <tr>
-                                                <th class="gold-font" scope="col"># 96.5%</th>
-                                                <th class="gold-font" scope="col"> ซื้อ</th>
-                                                <th class="gold-font"  scope="col"> ขาย</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td class="gold-font" >ทองคำแท่ง</td>
-                                                
-                                                <td class=" text-center <?=$cls_color;?>"><?=$manage[1][0]['blbuy'];?></td>
-                                                <td class=" text-center <?=$cls_color;?>"><?=$manage[1][0]['blbuy'];?></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="gold-font" >ทองรูปพรรณ</td>
-                                                <td class=" text-center <?=$cls_color;?>"><?=$manage[1][0]['ombuy'];?></td>
-                                                <td class=" text-center <?=$cls_color;?>"><?=$manage[1][0]['omsell'];?></td>
-                                            </tr>
-                                            <tr>                                            
-                                                <td class="gold-font"  >วันนี้ <?= $strnum;?></td>
-                                                <td class=" text-center <?=$cls_color;?>"><?=$pupd;?></td>    
-                                                <td class="text-center <?=$cls_color;?>"><?=$pupd;?></td>                                  
-                                            </tr>
-                                            </tbody>
-                                            
-                                            </table>
-                                    </div>
-                                    <div class="gold-font card-footer text-center">Goldspot <?=$manage[1][0]['gspot'];?> | USD <?=$manage[1][0]['usd'];?></div>
-                             
+                   
                           
                             </div>
 
-                            <div class="card card-main-bg"  style="margin-top: 35px;">
+
+                            
+                        </div> <!-- end - main main-raised -->
+
+                        <div class="main main-raised" style="margin: 0px 3px 0px;">  <!-- start - main main-raised -->
+                            <div class="container">
+                                <div class=" text-center ">                 
+                                        <div class="row">
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="card card-main-bg"  style="margin-top: 20px;">
                                     <div class="card-h-color card-header card-header-text" style="
                                         background: linear-gradient(60deg, rgba(212,175,55,1) 0%, rgba(212,175,55,1) 35%); padding: 0.005rem;">
                                         <div class="card-text">
@@ -177,12 +153,7 @@
                                    
                           
                             </div>
-
-
-                            
                         </div> <!-- end - main main-raised -->
-
-                  
         <?php 
             include_once("theme/footer.php");
             include_once("theme/scirpt.php");

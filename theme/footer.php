@@ -1,35 +1,31 @@
-<footer class="footer footer-default">
+<footer class="footer-fix">
           <div class="container">
-            <nav class="float-left">
-              <ul>
-                <li>
-                  <a href="https://smsgoldthai.blogspot.com">
-                    site
+          <ul class="nav nav-pills nav-pills-icons d-flex justify-content-center " role="tablist">          
+                <li class="nav-item">
+                  <a class="nav-link <?=($_SESSION['page']== 'index') ? "active" : "";?>" href="index.php" >                
+                    <i class="material-icons">home</i>
+                    หน้าหลัก
                   </a>
                 </li>
-                <li>
-                  <a href="https://fb.com/smsgoldthai">
-                   fb page
+                <li class="nav-item">
+                  <a class="nav-link <?=($_SESSION['page']== 'pricelist') ? "active" : "";?>" href="pricelist.php" >
+                    <i class="material-icons">today</i>
+                    สรุปรวมทองคำ
                   </a>
                 </li>
-                <li>
-                  <a href="#">
-                   fb group
+                <li class="nav-item">
+                  <a class="nav-link <?=($_SESSION['page']== 'cal') ? "active" : "";?>" href="cal.php" >
+                    <i class="material-icons">calculate</i>
+                    คำนวณทองคำ
                   </a>
                 </li>
-                <li>
-                  <a href="#">
-                    Licenses
+                <li class="nav-item">
+                  <a class="nav-link" href="#" >
+                    <i class="material-icons">support_agent</i>
+                    Service
                   </a>
-                </li>
+                </li>               
               </ul>
-            </nav>
-            <div class="copyright float-right">
-              &copy;
-              <script>
-                document.write(new Date().getFullYear())
-              </script>, made with <i class="material-icons">favorite</i> by
-              <a href="https://smsgoldthai.blogspot.com/" target="_blank">KarnDIY</a> for a better web.
-            </div>
+        
           </div>
-        </footer>
+</footer>
