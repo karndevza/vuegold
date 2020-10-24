@@ -83,6 +83,7 @@
                                     </div>      
                                     <div class="card-body card-b-pad" style="padding: .5rem 0.15rem;" >                                      
                                     <!-- <p class=" gold-font text-center">วันที่ <?=$manage[1][0]['time'];?>  ครั้งที่ <?=$manage[1][0]['upd'];?>  </p> -->
+                                    <div class="table-responsive">
                                     <table class="table">
                             <thead>
                                 <tr>                             
@@ -115,6 +116,8 @@
                             ?> 
                             </tbody>
                             </table>
+                            </div>
+
                                     </div>
                                     <div class="gold-font card-footer text-center">Goldspot <?=$manage[1][0]['gspot'];?> | USD <?=$manage[1][0]['usd'];?></div>
                              
