@@ -26,7 +26,7 @@
             $num = $manage[1][$i]['price'];
             $p= intval(str_replace(",","",$manage[1][$i]['price']));            
             $nums = intval($nums) + $p;          
-            $nums = intval($nums) +  intval($manage[1][$i]['price']); 
+            //$nums = intval($nums) +  intval($manage[1][$i]['price']); 
         }
         if($nums<0){
                 $strnum = '<i class="fa fa-sort-down" style="font-size:28px;color:red"><font color="red"> '.$nums.'</font>';
