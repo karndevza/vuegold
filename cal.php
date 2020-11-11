@@ -155,7 +155,8 @@
                             </div>
                         </div> <!-- end - main main-raised -->
         <?php 
-            include_once("theme/footer.php");
+           include_once("theme/nav-footer.php");
+           // include_once("theme/footer.php");
             include_once("theme/scirpt.php");
         ?>
 </body>

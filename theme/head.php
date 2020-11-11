@@ -92,7 +92,6 @@
   .color_green{ color:green;font-size: 150%;font-weight: 900;}
   .color_red_pl{ color:red;font-size: 120%;font-weight: 500;}
   .color_green_pl{ color:green;font-size: 120%;font-weight: 500;}
-
   </style>
 
 </head>
